@@ -1,11 +1,20 @@
 @import url("reset.css");
 
+* {
+   border-radius: 1rem;
+}
+
+body {
+   background: lightgray;
+}
+
 article {
    display: flex;
    flex-direction: column;
    border: 1px solid black;
    margin: 1rem;
    padding: 1rem;
+   background: black;
 }
 
 div {
@@ -15,7 +24,8 @@ div {
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: space-between;
+   justify-content: space-evenly;
+   background: lightgray;
 }
 
 @media (width >= 500px) {
@@ -27,7 +37,7 @@ div {
 @media (width >= 768px) {
    article {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-evenly;
    }
 
    div {
